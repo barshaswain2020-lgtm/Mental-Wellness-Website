@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'poppins',sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #e8f5e9 0%,
+    #c8e6c9 25%,
+    #a5d6a7 50%,
+    #81c784 75%,
+    #66bb6a 100%
+  );
+  background-attachment: fixed;
+}
+#navbar{
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100vw;
+  text-align: center;
+  /* border-radius: 20px; */
+ background-color: white;
+background-size: 400% 400%;
+
+}
+
+#menuBtn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(37, 92, 41);
+    padding: 10px;
+    text-shadow:0 0 10px whitesmoke;
+    transition: all 0.5s;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    font-size: 1rem;
+    right: 20px;
+    top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    /* text-decoration: blue; */
+    color: black;
+}
+
+    a{
+        text-decoration: none;
+        /* margin: 100px; */
+       font-size: 2rem;
+       color: rgb(37, 92, 41);
+       padding: 10px;
+       text-shadow:0 0 10px whitesmoke;
+       transition: all 0.5s;
+    }
+
+    a:hover{
+      transform: scale(1.2);
+        color: black;
+        /* border-bottom: 2px solid rgb(66, 119, 58); */
+    }
+
+    H1{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 3rem;
+      color: rgb(37, 92, 41);
+      text-shadow:0 0 10px whitesmoke;
+    }
+
+    IMG{
+      display: inline-block;
+      border-radius: 170px;
+      transition: transform 0.3s, box-shadow 0.5s; 
+      width: 250px;
+      height: 250px;
+      
+    }
+
+    IMG:hover{
+      transform: scale(1.2);
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.931);
+    }
+
+    #bimg{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    #bimg a{
+      padding-left: 5rem;
+      padding-right: 5rem;
+      
+    }
+
+    /* experiment  */
+/* .yoga-wrapper {
+  display: flex;
+  gap: 25px;
+} */
+
+/* Card */
+/* .yoga-card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-decoration: none;
+} */
+
+/* Image */
+/* .yoga-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.5s ease;
+} */
+
+/* Overlay */
+/* .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  border-radius:50%;
+  width: 250px;
+  height: 250px;
+  margin-left: 4.6rem; 
+} */
+
+/* Overlay Content
+.content {
+  text-align: center;
+  color: #fff;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+
+}
+
+.play {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.content p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+} */
+
+/* Hover Effects */
+/* .yoga-card:hover img {
+  transform: scale(1.1);
+}
+
+.yoga-card:hover .overlay {
+  opacity: 1;
+}
+
+ .yoga-card:hover .content {
+  transform: translateY(0);
+} */

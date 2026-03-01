@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mood</title>
+    <link rel="stylesheet" href="mood.css">
+  
+</head>
+<script src="home.js"></script>
+
+<body>
+      <div id="navbar">
+        <a href="navbar.html">HOME 🏡</a>
+        <a href="mood.html">MOOD 😃</a>
+        <a href="meditation.html">MEDITATION 🧘‍♂️</a>
+        <a href="journal.html">JOURNAL 📖</a>
+        <a href="yoga.html">YOGA 🌞</a>
+        <!-- <a href="about.html">ABOUT 🌿</a> -->
+
+         <button id="menuBtn">⋮</button>
+         <div id="dropdownMenu" class="dropdown">
+        <a href="profile.html">Profile 👤</a>
+        <a href="about.html">About 🌿</a>
+        <a href="#" id="logout">Logout 🚪</a>
+    </div>
+
+    </div>
+    
+ <section id="mood-section" >
+    <h2>How are you feeling today?
+        <p>Nurture your inner garden and watch your mood bloom</p>
+    </h2> <br>
+    <div class="emojis">
+      <button onclick="showMood('happy')">    😊 <div class="box"><p>Happy</p>    </div></botton>
+      <button onclick="showMood('neutral')">  😑 <div class="box"><p>Neutral</p>  </div></button>
+      <button onclick="showMood('tired')">    😓 <div class="box"><p>Tired</p>    </div></button>
+      <button onclick="showMood('Energetic')">🔥 <div class="box"><p>Energetic</p></div></button>
+      <button onclick="showMood('angry')">    😡 <div class="box"><p>Angry</p>    </div></button>
+      <button onclick="showMood('sad')">      😔 <div class="box"><p>Sad</p>      </div></button>
+      
+    </div> <br>
+    <div>
+      <p id="message">please select your mood</p>
+
+ </section>
+
+ 
+  <script>
+    function scrollToMood() {
+      document.getElementById("mood-section").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function showMood(mood) {
+      const messagebox1=document.getElementById("message");
+      let message = "";
+
+      switch (mood) {
+        case "happy":
+          message = "That's wonderful 🎉! Keep spreading joy 😊";
+          break;
+        case "neutral":
+          message = "It's okay to feel neutral😌. Try a short walk🚶 or listen to music!";
+          break;
+        case "tired":
+          message = "Take a deep breath. A bit of rest or stretching🧘 can help.";
+          break;
+        case "Energetic":
+          message = "Wow🎊, I can fell your energy too🌸 keep shining!";
+          break;
+        case "angry":
+          message = "It's okay😌 to be angry. Try journaling📖 or deep breathing.";
+          break;
+        case "sad":
+          message = "Sadness is temporary,you're stronger then you think💪.";
+          break;
+      }
+
+      messagebox1.innerText = message;
+    }
+
+      
+  </script>
+
+  <footer>
+    <div class="footer-1">
+        <div class="panel-1">
+<h1 class="fh">Quick links</h1>
+<img src="/WEBSITE/ib-2.png" alt="inbloom" class="fimg">
+</div>
+
+<div class="panel-1">
+<h1 class="fh" style="margin-bottom: 40px;">Support & Community </h1>
+<ul>
+    <li>Home</li>
+    <li>About us</li>
+    <li>Services/programs</li>
+    <li>Blog/Resources</li>
+    <li>Testimonials</li>
+    <li>Contact us</li>
+</ul>
+</div>
+<div class="panel-1">
+<h1 class="fh" style="margin-bottom: 40px;">Connect with us</h1>
+<ul style="margin-bottom: 60px;">
+    <li>Crises Resources</li>
+    <li>Support group</li>
+    <li>FAQs Testimonials</li>
+</ul>
+</div>
+    </div>
+</footer>
+</body>
+</html>

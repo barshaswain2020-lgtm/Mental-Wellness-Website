@@ -1,0 +1,125 @@
+    body{
+    background-image: url(front-bgimg.jpg);
+     background-size: cover;
+        height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: aliceblue;
+    }
+
+  div{
+    border: 3px solid rgb(0, 0, 0);
+       padding: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    
+     
+
+  }  
+
+   header{
+        font-size: 50px;
+        color: #083a03;
+    }
+
+    input{
+        background-color: transparent;
+        border-radius: 30px;
+        color: black;
+        padding: 20px;
+        border: 2px solid white;
+       
+    }
+
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px whitesmoke;
+}
+
+#img{
+border: none;
+display: flex;
+align-items: center;
+gap:inherit;
+font-size: 25px;
+font-weight:bolder;
+text-shadow:0 0 10px whitesmoke;
+position: relative;
+top: 30px;
+}
+
+#img img{
+    width: 70px;
+    height: auto;
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: black;
+}
+
+   input{
+        background-color: rgb(255,255,255,0.60);;
+        border-radius: 30px;
+        color: black;
+        border: 2px solid #317729;
+        
+    
+    }
+
+    #signin{
+     padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: #2a7623;
+    color: white;
+  margin-top: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#signup{
+    color: rgb(15, 131, 255);
+    font-size: larger;
+}
+
+
+
+@media (max-width: 568px) {
+    body {
+        padding: 20px;
+    }
+
+    #form-container {
+        width: 60%;
+        padding: 25px;
+    }
+
+    header {
+        font-size: 35px;
+    }
+
+    input {
+        width: 50%;
+        padding: 12px;
+    }
+
+    #signin {
+        width: 50%;
+    }
+
+    #img {
+        font-size: 18px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #img img {
+        width: 50px;
+    }
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(front-bgimg.jpg);
+    background-size: cover;
+    color: rgb(9, 9, 9);
+    font-family: 'Arial', sans-serif;
+    height:100vh;
+    border: border-box;
+    overflow: hidden;
+}
+
+.floting-petals{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:100%;
+overflow: hidden;
+pointer-events: none;
+}
+
+.petal{
+    position: absolute;
+    background-color: rgba(105, 178, 105, 0.899);
+    border-radius: 50%  20% 50% 20%;
+    animation: drift 10s linear infinite;
+}
+
+@keyframes drift {
+   0%{transform:translateY(-100vh) rotate(360deg) ;}
+   100%{transform: translateY(100vh) rotate(0deg);}
+}
+
+
+#upperbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 2.3rem 0 2.3rem;
+    /* border: 1px solid white; */
+    border-radius: 2rem;
+    /* background-color: rgb(219, 218, 218); */
+    padding: 0.5rem;
+}
+
+#sign-up{
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: rgb(252, 252, 253);
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.head{
+    font-family:'pacifico',cursive;
+    color: #208042;
+    text-shadow: 0 0 15px #fbfbfb;
+     font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.tagline{
+    /* font-family: 'poppins',sans-serif; */
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+pre{
+    /* font-family: 'Great vibes'cursive; */
+    font-family:cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.button{
+    /* padding: 12px 25px; */
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #208042;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8rem;
+ 
+}
+
+
+/* input{
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+
+} */
+
+
+
+
+#upperbtn img{
+    height:120px;
+    width: 100px;
+    /* width: 100px;
+    height: auto; */
+
+}
+
+
+
+/* .new-acc button{
+  
+    position: relative;
+    left: 10px;
+} */
+
+/* .new-acc{
+  font-size: 0.8rem;
+} */
+
+
+

@@ -1,0 +1,141 @@
+/* VARIABLES */
+:root {
+  --primary-color: #2a7623;
+  --secondary-color: #fff;
+  --accent-color: #66bb6a;
+  --bg-gradient: linear-gradient(135deg, #a1fff6, #6adbf2, #68d0e2, #8bdc8e, #71ce76);
+  --font-main: 'Poppins', sans-serif;
+  --font-heading: 'Pacifico', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-gradient);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+#navbar a:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#logo {
+  width: 60px;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section img {
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Yoga Cards */
+.yoga-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.yoga-cards img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+}
+
+.yoga-cards img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255,255,255,0.9);
+}
+
+/* Floating Petals Animation */
+.floating-petals {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.petal {
+  position: absolute;
+  background: pink;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation-name: float;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(500px) rotate(180deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .yoga-cards img {
+    width: 150px;
+    height: 150px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

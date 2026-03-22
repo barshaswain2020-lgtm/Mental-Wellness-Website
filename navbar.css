@@ -149,9 +149,8 @@ button:hover{
 
 /* footer */
 .footer-1{
-.footer-1{
-    background: linear-gradient(135deg, #f9fbf9 0%, #ffffff 25%, #a2f9ff 50%, #6ed4db 75%, #65b6c8 100%);
-
+    /* background: linear-gradient(135deg, #f9fbf9 0%, #ffffff 25%, #a2f9ff 50%, #6ed4db 75%, #65b6c8 100%); */
+background: linear-gradient(135deg, #2f7a98, #6ed4db);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -160,7 +159,6 @@ button:hover{
     gap: 2rem;
 
     padding: 2rem 1rem;   /* better than fixed height */
-}
 }
 
 .fh{

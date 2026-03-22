@@ -6,8 +6,7 @@
 
 body{
 font-family: 'poppins',sans-serif;
-/* min-height: 100vh; */
-min-height: 100vw;
+min-height: 100vh;
 overflow-x: hidden;
 }
 
@@ -15,13 +14,13 @@ overflow-x: hidden;
 #navbar{
     border: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 50px;
-    width: 100vw;
+    width: 100%;
   text-align: center;
  background-color: white;
 background-size: 400% 400%;
-margin-top: -40px;
+margin-top: 0;
 
 }
 
@@ -79,6 +78,7 @@ margin-top: -40px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
     
 }
 .hero_section{
@@ -91,7 +91,7 @@ margin-top: -40px;
 }
 
 .tag1{
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     color: white;
     font-family: cursive;
    
@@ -119,8 +119,9 @@ button:hover{
 }
 
 .serenity img{
-    margin-top: 1.3rem;
-    height: 40rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;  
     border-radius: 30px;
   
 }
@@ -156,61 +157,29 @@ li{
 }
 
 
-/* ========================= */
-/* RESPONSIVE DESIGN */
-/* ========================= */
+@media (max-width: 568px){
 
-@media (max-width: 568px) {
-
-    #navbar {
-        align-items: center;
-        height: auto;
-        /* padding: 10px 0; */
-    }
-
-    .box {
-        /* flex-direction: column; */
-        padding-left: 0;
-        gap: 10px;
-    }
-
-    a {
-        font-size: 1.2rem;
-        padding: 5px;
-    }
-
-     .tag1 {
-        font-size: 2rem;
-        /* text-align: center; */
-    }
-
-    p {
-        font-size: 1rem;
-        /* text-align: center; */
-    }
-
-    .serenity img {
-        /* flex-direction: column-reverse; */
-        height: auto;
-        width: 40%;
-        margin-top: 20px;
-    }
-
-    button {
-        width: 30%;
-    }
-
-      .footer-1 {
-        /* flex-direction: column; */
-        align-items: center;
-        height: auto;
-        padding: 10px;
-        gap: 20px;
+    .box{
+        flex-direction: column;  
         text-align: center;
     }
 
-    .fimg {
-        width: 50px;
+    .serenity img{
+        width: 80%;
     }
 
+    button{
+        width: auto;  
+    }
+
+    .footer-1{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .fimg{
+        width: 80px;
+    }
 }

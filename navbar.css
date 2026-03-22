@@ -14,13 +14,16 @@ overflow-x: hidden;
 #navbar{
     border: none;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;                 
     height: 50px;
     width: 100%;
+    padding: 0 1rem;
   text-align: center;
  background-color: white;
 background-size: 400% 400%;
-margin-top: 0;
+
 
 }
 
@@ -66,21 +69,22 @@ margin-top: 0;
     a:hover{
       transform: scale(1.2);
         color: black;
-        /* border-bottom: 2px solid rgb(0, 0, 0); */
     }
-/* div{
-       transition: all 2s ease ;
-} */
 
 .box{
      padding: 0 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
     
 }
+
+.box > div{
+    flex: 1;   /* both take equal space */
+}
+
 .hero_section{
     /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     background-color: #2f7a98;
@@ -112,6 +116,7 @@ border: 1px solid black;
 border-top: white;
 border-bottom: white;
 }
+
 button:hover{
     color: #26667F;
     background-color: white;
@@ -124,6 +129,16 @@ button:hover{
     height: auto;  
     border-radius: 30px;
   
+}
+
+@media(max-width:768px){
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .serenity img{
+        width: 90%;
+    }
 }
 
 
@@ -157,6 +172,7 @@ li{
 }
 
 
+/* responsive */
 @media (max-width: 568px){
 
     .box{

@@ -118,12 +118,12 @@ pointer-events: none;
         font-size: 1.1rem;
     }
 
-    pre{
+    #para{
         font-size: 1rem;
     }
 }
 
-pre{
+#para{
     font-family:cursive;
     text-align: center;
     font-size: 1.5rem;

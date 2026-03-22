@@ -29,12 +29,6 @@ background-size: 400% 400%;
     #navbar{
         display: none;
     }
-    #menuBtn{
-        display: block;
-    }
-    .dropdown{
-        display: block;
-    }
 }
 
 #menuBtn {

@@ -23,8 +23,15 @@ overflow-x: hidden;
   text-align: center;
  background-color: white;
 background-size: 400% 400%;
+}
 
-
+@media(max-width:768px){
+    #navbar{
+        display: none;
+    }
+    #menuBtn{
+        display: block;
+    }
 }
 
 #menuBtn {
@@ -43,8 +50,8 @@ background-size: 400% 400%;
     position: absolute;
     background: white;
     font-size: 1rem;
-    right: 20px;
-    top: 90px;
+    right: 10px;
+    top: 60px;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }

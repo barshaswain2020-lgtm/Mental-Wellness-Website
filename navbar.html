@@ -11,7 +11,7 @@
 <body>
     
 
-    <div class="hero_section">
+    <div class="hero_section"> 
     <div id="navbar">
         <a href="navbar.html">HOME 🏡</a>
         <a href="mood.html">MOOD 😃</a>
@@ -67,5 +67,15 @@
     </div>
 </footer>
 
+
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+const dropdown = document.querySelector(".dropdown");
+
+menuBtn.addEventListener("click", () => {
+    dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+});
+</script>
 </body>
 </html>

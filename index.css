@@ -9,9 +9,9 @@ body{
     background-size: cover;
     color: rgb(9, 9, 9);
     font-family: 'Arial', sans-serif;
-    height:100vh;
+    min-height:100vh;
     border: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .floting-petals{
@@ -43,10 +43,15 @@ pointer-events: none;
     justify-content: space-between;
     position: relative;
     margin: 0 2.3rem 0 2.3rem;
-    /* border: 1px solid white; */
     border-radius: 2rem;
-    /* background-color: rgb(219, 218, 218); */
     padding: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 480px){
+    #upperbtn{
+        margin: 0 1rem;
+    }
 }
 
 #sign-up{
@@ -76,16 +81,38 @@ pointer-events: none;
     margin-bottom: 2rem;
 }
 
+/* Responsive Design */
+@media (max-width: 768px){
+    .head{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px){
+    .head{
+        font-size: 2.2rem;
+    }
+}
+
 .tagline{
-    /* font-family: 'poppins',sans-serif; */
     text-align: center;
     font-size: 1.5rem;
     color: white;
     margin-bottom: 2.5rem;
 }
 
+/* Mobile */
+@media (max-width: 480px){
+    .tagline{
+        font-size: 1.1rem;
+    }
+
+    pre{
+        font-size: 1rem;
+    }
+}
+
 pre{
-    /* font-family: 'Great vibes'cursive; */
     font-family:cursive;
     text-align: center;
     font-size: 1.5rem;
@@ -93,7 +120,6 @@ pre{
 }
 
 .button{
-    /* padding: 12px 25px; */
     font-size: 1.2rem;
     padding: 1rem;
     background-color: #208042;
@@ -102,41 +128,30 @@ pre{
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
-    margin-top: 8rem;
+    margin-top: 4rem;
  
 }
 
-
-/* input{
-    padding: 20px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-
-} */
-
-
-
+/* Mobile */
+@media (max-width: 480px){
+    .button{
+        margin-top: 2rem;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
 
 #upperbtn img{
     height:120px;
     width: 100px;
-    /* width: 100px;
-    height: auto; */
-
 }
 
-
-
-/* .new-acc button{
-  
-    position: relative;
-    left: 10px;
-} */
-
-/* .new-acc{
-  font-size: 0.8rem;
-} */
+/* Mobile */
+@media (max-width: 480px){
+    #upperbtn img{
+        width: 70px;
+    }
+}
 
 
 

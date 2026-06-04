@@ -109,13 +109,15 @@ font-weight: bolder;
     top:30px;
 
 }
-#para-1{
+#para-1,
+#para-2,
+#para-3,
+#para-4,
+#para-5,
+#para-6{
      display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     font-size: 30px;
-    /* position: absolute;
-    top: 300px;
-    left: 700px; */
     font-family:'pacifico',cursive;
 }
 
@@ -316,7 +318,12 @@ footer{
         text-align: center;
     }
 
-    #para-1{
+    #para-1,
+    #para-2,
+    #para-3,
+    #para-4,
+    #para-5,
+    #para-6{
         position: static;
         max-width: 1000px;
         margin: 20px auto;
@@ -370,6 +377,7 @@ footer{
     #para-6{
         max-width: 1100px;
         margin: 20px auto;
+        margin-right: 10px;
         text-align: center;
         font-size: 1.6rem;
         line-height: 1.8;

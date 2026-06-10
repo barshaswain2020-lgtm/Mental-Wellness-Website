@@ -133,19 +133,6 @@ color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 }
-/* .progress-bar{
-    width: 55%;
-    height: 6px;
-    background-color: rgb(186, 229, 180);
-    border-radius: 4px;
-}
-
-.progressbar-fill{
-    border-radius: 4px;
-    height: 100%;
-    background: linear-gradient(90deg,#52a856, #106514);
-    animation: progress 12s infinite linear;
-} */
 
 @keyframes progress {
             0% { width: 0%; }
@@ -411,4 +398,215 @@ margin-bottom: -5px;
 
 li{
     color: black;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 992px){
+
+    #navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    a{
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .tag1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .para1{
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+
+    .journaling{
+        width: 85%;
+    }
+
+    .sub-box{
+        width: 80%;
+    }
+
+    .box4{
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 40%;
+    }
+
+    .para3{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        width: 90%;
+    }
+
+    .footer-1{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    a{
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    #menuBtn{
+        font-size: 1.3rem;
+    }
+
+    .tag1{
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .para1{
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .journaling{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .thought{
+        font-size: 1.5rem;
+    }
+
+    .tag2{
+        font-size: 1.1rem;
+    }
+
+    input,
+    #feeling,
+    #text{
+        width: 100%;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .tag3,
+    .tag5,
+    .tag6{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sub-box{
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    .tag4{
+        font-size: 1.2rem;
+    }
+
+    .para2{
+        font-size: 1rem;
+    }
+
+    .box4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    img:hover{
+        transform: scale(1.05);
+    }
+
+    .para3{
+        width: 95%;
+        font-size: 1.2rem;
+    }
+
+    .footer{
+        width: 95%;
+    }
+
+    .foot{
+        font-size: 1rem;
+    }
+
+    .footer-1{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .fimg{
+        width: 100px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px){
+
+    a{
+        font-size: 0.8rem;
+    }
+
+    .tag1{
+        font-size: 1.5rem;
+    }
+
+    .para1{
+        font-size: 1rem;
+    }
+
+    .tag3,
+    .tag5,
+    .tag6{
+        font-size: 1.6rem;
+    }
+
+    img{
+        width: 55%;
+    }
+
+    .para3{
+        font-size: 1rem;
+    }
 }

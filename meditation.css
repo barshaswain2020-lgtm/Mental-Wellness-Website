@@ -8,15 +8,30 @@ padding: 0;
 
 
 #navbar{
-    border: none;
+    /* border: none;
     display: flex;
     justify-content: space-evenly;
     height: 50px;
     width: 100vw;
   text-align: center;
-  /* border-radius: 20px; */
  background-color: white;
-background-size: 400% 400%;
+background-size: 400% 400%; */
+
+ display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+#navbar a{
+   font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(37, 92, 41);
+    white-space: nowrap;
 
 }
 
@@ -124,22 +139,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
-/* .progress-bar {
-            width: 60%;
-            height: 6px;
-            background: rgba(44, 107, 35, 0.4);
-            border-radius: 3px;
-            
-        
-        }
-
-.progress-bar-fill {
-    border-radius: 3px;
-    height: 100%;
-    background: linear-gradient(90deg, #81C784, #54e35b);
-    animation: progress 12s infinite linear;
-} */
 
 @keyframes progress {
             0% { width: 0%; }
@@ -443,4 +442,274 @@ margin-bottom: -5px;
 
 li{
     color: black;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+/* Universal */
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px){
+
+    .breath-box{
+        width: 700px;
+        height: 700px;
+    }
+
+    .card{
+        width: 400px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px){
+
+    #navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    a{
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .quote1{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 0 20px;
+    }
+
+    .quote2{
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+
+    .breath-box{
+        width: 90%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .circle{
+        width: 250px;
+        height: 250px;
+        font-size: 1.5rem;
+    }
+
+    .quote3{
+        font-size: 1.4rem;
+        padding: 30px 20px;
+    }
+
+    .card{
+        width: 90%;
+        height: auto;
+    }
+
+    .tag2{
+        font-size: 1.4rem;
+    }
+
+    .para1{
+        font-size: 1.1rem;
+    }
+
+    .timer{
+        width: 90%;
+    }
+
+    #medi{
+        justify-content: center;
+    }
+
+    IMG{
+        width: 180px;
+        height: 180px;
+        margin: 20px;
+    }
+
+    #mtv{
+        margin: 20px;
+    }
+
+    .footer-1{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* moves to next line if needed */
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    a{
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    #menuBtn{
+        font-size: 1.5rem;
+    }
+
+    .float-ib{
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .quote1{
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        padding: 15px;
+    }
+
+    .quote2{
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .breath-box{
+        width: 95%;
+        height: auto;
+        padding: 25px 10px;
+    }
+
+    .circle{
+        width: 180px;
+        height: 180px;
+        font-size: 1.2rem;
+        top: 0;
+    }
+
+    .quote3{
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+
+    .tips-heading{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card{
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .tag2{
+        font-size: 1.2rem;
+    }
+
+    .para1{
+        font-size: 1rem;
+    }
+
+    .timer{
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .timer-display{
+        font-size: 2rem;
+    }
+
+    .timer-buttons{
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    #tag{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    #medi{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    IMG{
+        width: 140px;
+        height: 140px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #mtv{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .footer-1{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .fimg{
+        width: 100px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px){
+
+    .circle{
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+    }
+
+    .quote1{
+        font-size: 1rem;
+    }
+
+    .quote2{
+        font-size: 0.9rem;
+    }
+
+    .timer-display{
+        font-size: 1.8rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    #tag{
+        font-size: 1.7rem;
+    }
 }
